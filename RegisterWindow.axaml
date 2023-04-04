@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        x:Class="Lab4.RegisterWindow"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Padding="10"
+        Title="Sign UP"
+		Width="500" MinWidth="300">
+	<StackPanel Spacing="5">
+		<TextBlock>Name</TextBlock>
+		<TextBox Text="{Binding Name}"></TextBox>
+		<TextBlock>Surname</TextBlock>
+		<TextBox Text="{Binding Surname}"></TextBox>
+		<TextBlock>Email</TextBlock>
+		<TextBox Text="{Binding Login}"></TextBox>
+		<TextBlock>Password</TextBlock>
+		<TextBox Text="{Binding Password}"></TextBox>
+		<StackPanel Orientation="Horizontal"
+                    Spacing="5"
+                    Margin="0, 5, 0, 0">
+			<Button Width="100"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    HorizontalContentAlignment="Center"
+                    Click="ButtonRegister_OnClick">
+				Register
+			</Button>
+		</StackPanel>
+	</StackPanel>
+</Window>
